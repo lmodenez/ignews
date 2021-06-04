@@ -5,7 +5,7 @@ import { getStripeJs } from '../../services/stripe-js';
 import styles from './styles.module.scss';
 
 export function SubscribeButton() {
-  const session = useSession();
+  const [session] = useSession();
   const router = useRouter();
 
   async function handleSubscribe() {
